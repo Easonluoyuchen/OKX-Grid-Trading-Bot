@@ -35,7 +35,7 @@ Implements the **traditional grid strategy** with an optional **initial position
   - Auto-refresh every 10s (configurable).
 
 ---
-
+---
 ## ⚙️ Installation
 
 ```bash
