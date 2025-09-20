@@ -1,0 +1,25 @@
+exchange:
+  symbol: "BTC-USDT-SWAP"
+  default_type: "swap"     # ccxt okx options.defaultType
+
+grid:
+  lower_price: 52000
+  upper_price: 62000
+  levels: 40               # 网格层数
+  order_size: 20           # 每格名义金额（USDT）
+  init_position: true   # 是否啟用初始倉位 (true/false)
+
+risk:
+  max_positions: 2
+  max_notional: 2000
+  stop_loss: 48000
+  take_profit: 64000
+
+runtime:
+  log_level: "INFO"
+  ws_heartbeat_sec: 20
+  rest_poll_sec: 2
+  fee_rate: 0.0005
+  band_ttl: 8.0
+  state_path: "grid_state.json"
+  commands_path: "grid_commands.jsonl"
