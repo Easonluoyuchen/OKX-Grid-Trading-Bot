@@ -87,10 +87,10 @@ streamlit run src/streamlit_app.py
 Then open http://localhost:8501 in your browser.
 
 
-**Workflow**
--Configure .env and config.local.yml.
--Run the bot.
--Grid orders are placed (and optional init position).
--Open the UI.
--Monitor PnL, equity, and orders.
--Control via UI commands.
+-**Workflow**
+  -Configure .env and config.local.yml.
+  -Run the bot.
+  -Grid orders are placed (and optional init position).
+  -Open the UI.
+  -Monitor PnL, equity, and orders.
+  -Control via UI commands.
