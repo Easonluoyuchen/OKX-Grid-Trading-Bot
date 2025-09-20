@@ -39,6 +39,62 @@ Implements the **traditional grid strategy** with an optional **initial position
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourname/okx-grid-bot.git
+git clone https://github.com/Easonluoyuchen/okx-grid-bot.git
 cd okx-grid-bot
 pip install -r requirements.txt
+
+## 🔑 API Keys
+```bash
+Create a .env file in the project root:
+OKX_API_KEY=your_api_key
+OKX_API_SECRET=your_api_secret
+OKX_PASS=your_passphrase
+OKX_USE_TESTNET=true   # true = testnet, false = live
+
+
+## 📝 Configuration
+Edit configs/config.local.yml:
+exchange:
+  symbol: BTC-USDT-SWAP
+  default_type: swap
+
+grid:
+  lower_price: 10000
+  upper_price: 12000
+  levels: 20
+  order_size: 20
+  init_position: true   # enable or disable initial position
+
+runtime:
+  state_path: grid_state.json
+  commands_path: grid_commands.jsonl
+  fee_rate: 0.0005
+  sleep_sec: 0.5
+  rest_poll_sec: 2
+  band_ttl: 8
+
+## ▶️ Run
+Start the bot:
+python -m src.main --config configs/config.local.yml
+Start the UI:
+streamlit run src/streamlit_app.py
+Then open http://localhost:8501 in your browser.
+
+## 📂 Project Structure
+src/
+  main.py          # entrypoint
+  engine.py        # grid engine core
+  streamlit_app.py # monitoring UI
+configs/
+  config.local.yml # config file
+.env               # API keys
+grid_state.json    # state file (auto-generated)
+grid_commands.jsonl# command channel
+
+**Workflow**
+Configure .env and config.local.yml.
+Run the bot.
+Grid orders are placed (and optional init position).
+Open the UI.
+Monitor PnL, equity, and orders.
+Control via UI commands.
