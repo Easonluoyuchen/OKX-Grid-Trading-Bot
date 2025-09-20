@@ -86,21 +86,11 @@ streamlit run src/streamlit_app.py
 ```
 Then open http://localhost:8501 in your browser.
 
-## 📂 Project Structure
-src/
-  main.py          # entrypoint
-  engine.py        # grid engine core
-  streamlit_app.py # monitoring UI
-configs/
-  config.local.yml # config file
-.env               # API keys
-grid_state.json    # state file (auto-generated)
-grid_commands.jsonl# command channel
 
 **Workflow**
-Configure .env and config.local.yml.
-Run the bot.
-Grid orders are placed (and optional init position).
-Open the UI.
-Monitor PnL, equity, and orders.
-Control via UI commands.
+-Configure .env and config.local.yml.
+-Run the bot.
+-Grid orders are placed (and optional init position).
+-Open the UI.
+-Monitor PnL, equity, and orders.
+-Control via UI commands.
