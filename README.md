@@ -86,8 +86,8 @@ streamlit run src/streamlit_app.py
 ```
 Then open http://localhost:8501 in your browser.
 
-
-- **Workflow**
+---
+**Workflow**
   - Configure .env and config.local.yml.
   - Run the bot.
   - Grid orders are placed (and optional init position).
