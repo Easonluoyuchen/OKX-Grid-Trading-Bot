@@ -42,9 +42,9 @@ Implements the **traditional grid strategy** with an optional **initial position
 git clone https://github.com/Easonluoyuchen/okx-grid-bot.git
 cd okx-grid-bot
 pip install -r requirements.txt
+```bash
 
 ## 🔑 API Keys
-```bash
 Create a .env file in the project root:
 OKX_API_KEY=your_api_key
 OKX_API_SECRET=your_api_secret
