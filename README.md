@@ -42,19 +42,21 @@ Implements the **traditional grid strategy** with an optional **initial position
 git clone https://github.com/Easonluoyuchen/okx-grid-bot.git
 cd okx-grid-bot
 pip install -r requirements.txt
-bash```
+```
 ---
 
 ## 🔑 API Keys
 Create a .env file in the project root:
+```bash
 OKX_API_KEY=your_api_key
 OKX_API_SECRET=your_api_secret
 OKX_PASS=your_passphrase
 OKX_USE_TESTNET=true   # true = testnet, false = live
-
+```
 
 ## 📝 Configuration
 Edit configs/config.local.yml:
+```bash
 exchange:
   symbol: BTC-USDT-SWAP
   default_type: swap
@@ -73,12 +75,15 @@ runtime:
   sleep_sec: 0.5
   rest_poll_sec: 2
   band_ttl: 8
+```
 
 ## ▶️ Run
 Start the bot:
+```bash
 python -m src.main --config configs/config.local.yml
 Start the UI:
 streamlit run src/streamlit_app.py
+```
 Then open http://localhost:8501 in your browser.
 
 ## 📂 Project Structure
