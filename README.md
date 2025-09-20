@@ -35,14 +35,14 @@ Implements the **traditional grid strategy** with an optional **initial position
   - Auto-refresh every 10s (configurable).
 
 ---
----
+
 ## ⚙️ Installation
 
 ```bash
 git clone https://github.com/Easonluoyuchen/okx-grid-bot.git
 cd okx-grid-bot
 pip install -r requirements.txt
-
+bash```
 ---
 
 ## 🔑 API Keys
